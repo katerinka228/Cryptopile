@@ -1,0 +1,146 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 8px;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.title {
+    color: #ffffff !important;
+    font-size: 2rem ;
+    margin: 0 !important;
+    font-weight: bold !important;
+}
+
+.table {
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.table :global(.ant-table) {
+    background-color: transparent;
+    color: #e0e0e0;
+    table-layout: fixed;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+    background-color: #333333 ;
+    color: #ffffff ;
+    font-weight: 600;
+    border-bottom: 1px solid #444;
+    padding: 9px ;
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+    border-bottom: 1px solid #444;
+    padding: 9px !important;
+    background-color: #2d2d2d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table :global(.ant-table-tbody > tr:hover > td) {
+    background-color: #3a3a3a !important;
+}
+
+.priceCell {
+    font-family: monospace;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.positiveChange {
+    color: #52c41a ;
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.negativeChange {
+    color: #ff4d4f ;
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.chartContainer {
+    height: 50px;
+    margin: -5px 0;
+}
+
+.tooltip {
+    background: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.sort {
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.sortSelect {
+    width: 320px;
+}
+
+.sortSelect :global(.ant-select-selector) {
+    background-color: #333 !important;
+    color: #fff ;
+    border: 1px solid #444 ;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.paginationButton:hover {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.paginationText {
+    color: #ffffff ;
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.loading {
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+}
