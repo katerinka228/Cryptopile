@@ -31,9 +31,7 @@ export default function Chat() {
   useEffect(() => {
     const newSocket = io("ws://89.169.168.253:4500", {
       transports: ["websocket"],
-      upgrade: false,
-      reconnectionAttempts: 5,
-      reconnectionDelay: 1000,
+      secure: false
     });
 
     newSocket.on("connect", () => {
